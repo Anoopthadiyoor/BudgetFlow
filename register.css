@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    background: #f4f8fa; /* Light cyan-gray */
+    color: #163a5f; /* Dark navy */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-container {
+    width: 100%;
+    max-width: 1400px;
+    padding: 40px 50px;
+}
+
+/* ================= LOGO ================= */
+.logo-section {
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.logo-section h1 {
+    font-size: 56px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.logo-section h1 span:first-child {
+    color: #163a5f;
+}
+
+.logo-section h1 span:last-child {
+    color: #2dbbb6;
+}
+
+.logo-section p {
+    margin-top: 8px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #5b7290;
+}
+
+/* ================= REGISTER ================= */
+.register-container {
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 45px;
+    align-items: center;
+}
+
+/* Image */
+.image-box {
+    height: 445px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-box img {
+    width: 90%;
+    height: 90%;
+    object-fit: contain;
+}
+
+/* Form */
+.register-box {
+    height: 445px;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(22, 58, 95, 0.1);
+    border: 1px solid #e1e8ef;
+}
+
+.form-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.form-heading h2 {
+    font-size: 36px;
+    color: #163a5f;
+    font-weight: 700;
+}
+
+.form-heading span {
+    font-size: 40px;
+}
+
+/* Inputs */
+.register-box input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #dce4ec;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    background: #f4f8fa;
+    color: #163a5f;
+    font-family: 'Outfit', sans-serif;
+    transition: 0.3s;
+}
+
+.register-box input::placeholder {
+    color: #8fa4b8;
+}
+
+.register-box input:focus {
+    border-color: #2dbbb6;
+    box-shadow: 0 0 0 3px rgba(45, 187, 182, 0.2);
+    background: #ffffff;
+}
+
+/* Register button */
+.register-btn {
+    display: block;
+    width: 100%;
+    margin: 20px auto 0;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    background: #2dbbb6;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    font-family: 'Outfit', sans-serif;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 15px rgba(45, 187, 182, 0.3);
+}
+
+.register-btn:hover {
+    transform: translateY(-2px);
+    background: #239e99;
+    box-shadow: 0 6px 20px rgba(45, 187, 182, 0.5);
+}
+
+/* Login */
+.login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 16px;
+    color: #5b7290;
+}
+
+.login-link button {
+    border: none;
+    background: none;
+    color: #f25430;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 8px;
+    font-family: 'Outfit', sans-serif;
+    transition: 0.2s;
+}
+
+.login-link button:hover {
+    color: #d14322;
+    text-decoration: underline;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 850px) {
+    .page-container {
+        padding: 25px;
+    }
+    .logo-section h1 {
+        font-size: 42px;
+    }
+    .register-container {
+        grid-template-columns: 1fr;
+    }
+    .image-box {
+        display: none;
+    }
+    .register-box {
+        height: auto;
+    }
+}
