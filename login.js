@@ -20,11 +20,9 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
 
 
-        const username =
-            document.getElementById("loginUsername").value.trim();
+        const username = document.getElementById("loginUsername").value.trim();
 
-        const password =
-            document.getElementById("loginPassword").value.trim();
+        const password = document.getElementById("loginPassword").value.trim();
 
 
         if (username === "" || password === "") {
